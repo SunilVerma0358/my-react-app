@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BoxModal from "./Components/BoxModal";
+
+import Custom from "./Components/Custom";
+import CustomAccordion from "./Components/CustomAccordion";
+import CustomTap from "./Components/CustomTap";
+import FormValidacation from "./Components/FormValidacation";
+import Utilities from "./Components/Utilities";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Custom />
+      <CustomAccordion />
+      <BoxModal />
+      <Utilities />
+      <CustomTap />
+      <FormValidacation />
+    </>
   );
 }
 
